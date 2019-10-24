@@ -83,7 +83,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://maximilian:1234567max@cluster0-mwsdg.mongodb.net/shop?retryWrites=true',  { useNewUrlParser: true }
+    'mongodb+srv://ds:1234567ds@cluster0-mwsdg.mongodb.net/shop?retryWrites=true',  { useNewUrlParser: true }
   )
   .then(result => {
     app.listen(8080);
